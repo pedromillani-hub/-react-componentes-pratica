@@ -56,6 +56,13 @@ function App() {
     disponivel={false}
     textoBotao="Avise-me"
   />
+  <Produto
+  nome="Processador Ryzen 7 5700X"
+  descricao="AMD 8 núcleos / 16 threads - Zen 3"
+  preco={1050}
+  disponivel={true}
+  textoBotao="Comprar"
+/>
 </>
     </>
   )

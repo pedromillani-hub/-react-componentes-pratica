@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0b14;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-hover: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: #f5f3f8;
+  --text-muted: #a9a3b8;
+  --accent: #ff7a1a;
+  --accent-2: #ff3d81;
+  --accent-3: #ffb347;
+  --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --success: #3ddc97;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 61, 129, 0.22), transparent 40%),
+    radial-gradient(circle at 88% 20%, rgba(255, 122, 26, 0.18), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(140, 60, 200, 0.2), transparent 45%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+#root {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent-2);
+  color: #fff;
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+  border-radius: 10px;
+}
